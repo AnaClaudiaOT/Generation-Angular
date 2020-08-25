@@ -1,0 +1,10 @@
+.parallax {
+    background-image: url('https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/5YhXXuS0hIw6JV3nJr3GgP/682bf2a70a98c3e466f26c2c2a812d65/front-end-web-developer-nanodegree--nd001.jpg');
+  
+    min-height: 500px;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
