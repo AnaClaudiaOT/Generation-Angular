@@ -25,11 +25,11 @@
                     <div class="form-group m-0">
                         <label class="text-monospace" for="tema">Escolha um tema ou <a routerLink='/cadastro-tema'>Cadastre um
                                 novo</a></label>
-                        <select name="tema" id='tema' class="form-control" [(ngModel)]='idTema' (change) = 'findByIdTema()'>
-                            <option *ngFor = 'let item of listaTemas' value={{item.id}}>
-                                {{item.descricao}}
+                        <select name="tema" id='tema' class="form-control" [(ngModel)]='idTema' (change)='findByIdTema()'>
+                            <option *ngFor='let item of listaTemas' value={{item.id}}>
+                              {{item.descricao}}
                             </option>
-                        </select>
+                          </select>
                     </div>
                 </div>
 
@@ -73,17 +73,16 @@
                                 <div class="card-header">
                                     <div class="row d-flex align-items-center">
                                         <div class="col-md-8">
-                                            <h5 class="card-title"> {{item.titulo}} </h5>
                                             <small>Tema: {{item.tema.descricao}} </small>
+                                            <h5 class="card-title"> {{item.titulo}} </h5>                                            
                                         </div>
                                         <div class="col-md-4 d-flex justify-content-end">
 
-                                            <button class="mr-3 btn btn-outline-info"
-                                               >
+                                            <button class="mr-3 btn btn-outline-info" [routerLink]="['/editar-post', item.id]">
                                                 Editar
                                             </button>
 
-                                            <button class="btn btn-outline-danger ml-3"
+                                            <button class="btn btn-outline-danger ml-3" [routerLink]="['/delete-post', item.id]"
                                                 >
                                                 Apagar
                                             </button>
