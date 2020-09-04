@@ -7,8 +7,9 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { PostTemaComponent } from './post-tema/post-tema.component';
 import { PutPostagemComponent } from './put-postagem/put-postagem.component';
 import { DeletePostagemComponent } from './delete-postagem/delete-postagem.component';
-import { DeleteTemaComponent } from './delete-tema/delete-tema.component';
 import { PutTemaComponent } from './put-tema/put-tema.component';
+import { DeleteTemaComponent } from './delete-tema/delete-tema.component';
+
 
 
 const routes: Routes = [

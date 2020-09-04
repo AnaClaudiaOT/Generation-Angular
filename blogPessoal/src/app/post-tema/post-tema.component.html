@@ -9,7 +9,8 @@
 
             <div class="form-group">
                 <label class="text-monospace" for="texto">Nome do tema:</label>
-                <input class="form-control" id="texto" rows="3" placeholder="Digite aqui o seu novo tema" [(ngModel)]='tema.descricao'>
+                <input class="form-control" id="texto" rows="3" placeholder="Digite aqui o seu novo tema"
+                    [(ngModel)]='tema.descricao'>
             </div>
             <div class="row mb-5">
                 <div class="col-md-12 d-flex justify-content-center">
@@ -40,10 +41,13 @@
                         <td class="d-flex justify-content-end">
                             <a class="btn btn-outline-info mr-3" [routerLink]="['/editar-tema', item.id]">Editar</a>
                             <a class="btn btn-outline-danger" [routerLink]="['/delete-tema', item.id]">Apagar</a>
-                          </td>
+                        </td>
                     </tr>
+
                 </tbody>
             </table>
+
+
         </div>
     </div>
 </div>
